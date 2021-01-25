@@ -1,0 +1,62 @@
+q {
+  quotes: ">>" "<<";
+}
+
+q q {
+  quotes: ">>" "<<" ">" "<";
+}
+
+q q q {
+  quotes: ">>" "<<" ">" "<";
+}
+
+q q q q {
+  quotes: ">>" "<<" ">" "<";
+}
+p {
+  text-indent: 1.5em;
+}
+p:hover {
+  background-color: hsl(0, 100%, 90%);
+}
+q:hover {
+  background-color: hsla(0, 100%, 50%, 0.2);
+}
+
+q q:hover {
+  background-color: hsl(0, 100%, 75%);
+}
+q q q:hover {
+  background-color: hsl(0, 100%, 60%);
+}
+q q q q:hover {
+  background-color: hsl(0, 100%, 45%);
+}
+tr :hover {
+  background-color: hsl(0, 100%, 75%);
+}
+ul li ul li:hover {
+  background-color: hsl(0, 100%, 75%);
+}
+ul li ul li ol li :hover {
+  background-color: hsl(0, 100%, 75%);
+}
+ul li ol li:hover {
+  background-color: hsl(0, 100%, 75%);
+}
+::selection {
+  background-color: hsl(120, 100%, 50%);
+  color: hsl(0, 100%, 45%);
+}
+table {
+  border-collapse: collapse;
+}
+tr:nth-child(odd) {
+  background-color: hsl(106, 61%, 73%);
+}
+tr:nth-child(even) {
+  background-color: hsl(118, 61%, 59%);
+}
+tr:not(:last-child) {
+  border-bottom: 1px solid hsl(243, 82%, 9%);
+}
